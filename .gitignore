@@ -1,0 +1,31 @@
+# IDE / dotnet
+.vs/
+.vscode/
+.idea/
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Generated outputs, downloaded dependencies, game assets
+/dist/
+/.cache/
+/artifacts/
+**/assets/source/
+**/assets/private/
+**/assets/runtime/
+**/assets/generated/
+**/lib/
+**/game-managed/
+*.pdb
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

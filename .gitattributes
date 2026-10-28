@@ -1,0 +1,11 @@
+* text=auto
+*.cs text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.glb binary
+*.fbx binary
+*.pmx binary
+*.ogg binary
+*.bundle binary
+*.mmesh binary
+*.manim binary

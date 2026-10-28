@@ -1,0 +1,7 @@
+{
+  "id": "com.zeroga.sodmod.herrscheroftruth",
+  "name": "Herrscher of Truth (M0 Scaffold)",
+  "author": "zeroga",
+  "modVer": "0.0.1",
+  "assemblies": ["HerrscherOfTruth.dll"]
+}

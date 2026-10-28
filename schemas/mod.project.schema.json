@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sodmod build manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "kind", "slug", "assembly", "project", "modId"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "kind": {"enum": ["character", "feature"]},
+    "slug": {"type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"},
+    "assembly": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9]*\\.dll$"},
+    "project": {"type": "string", "pattern": "^src/[A-Za-z][A-Za-z0-9]*\\.csproj$"},
+    "modId": {"type": "string", "pattern": "^com\\.zeroga\\.sodmod\\.[a-z0-9]+$"},
+    "visualBackend": {"type": "string"}
+  }
+}
