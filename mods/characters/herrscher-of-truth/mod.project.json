@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "kind": "character",
+  "slug": "herrscher-of-truth",
+  "assembly": "HerrscherOfTruth.dll",
+  "project": "src/HerrscherOfTruth.csproj",
+  "modId": "com.zeroga.sodmod.herrscheroftruth",
+  "visualBackend": "unresolved"
+}

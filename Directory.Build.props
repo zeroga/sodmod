@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <GameDir Condition="'$(GameDir)' == '' and '$(SOD_GAME_DIR)' != ''">$(SOD_GAME_DIR)</GameDir>
+    <GameManagedDir Condition="'$(GameDir)' != ''">$(GameDir)/Shape of Dreams_Data/Managed</GameManagedDir>
+  </PropertyGroup>
+</Project>

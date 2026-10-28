@@ -1,0 +1,22 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate mod project metadata
+        run: python tools/validate.py
+      - name: Run repository tests
+        run: python -m unittest discover -s tests -v
+      # Game assembly compilation is intentionally NOT attempted in hosted CI.
+      # It requires privately installed Shape of Dreams Managed DLLs.

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "forms": [
+    { "id": "extremum", "visualId": "bronya-extremum", "implemented": false },
+    { "id": "continuation", "visualId": "truth-mecha", "implemented": false }
+  ],
+  "transition": {
+    "strategy": "direct-swap",
+    "futureOptionalAnimation": "mechanical-assembly",
+    "implemented": false
+  }
+}
